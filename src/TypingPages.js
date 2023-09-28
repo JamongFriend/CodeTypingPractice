@@ -5,7 +5,11 @@ class TypingPages {
 }
 
 
-class TypingBox{}
+class TypingBox{
+    typing(){
+        
+    }
+}
 
 class SelectProgLang{
     select(a){

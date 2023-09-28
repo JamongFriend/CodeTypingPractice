@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+const mysql = require('mysql');
 
 // create the connection to database
 const connection = mysql.createConnection({
@@ -8,11 +8,11 @@ const connection = mysql.createConnection({
   database: 'codeText'
 })
 
-connection.query(
-    'SELECT * FROM /**/ WHERE textLsit'
+connection.connect();
 
-)
+connection.query('SELECT * from Users', (error, rows, fields) => {
+  if (error) throw error;
+  console.log('User info is: ', rows);
+});
 
-
-const arr = new Array('SELECT COUNT(id) FROM /**/' );
-const a = Math.random()*arr.length;
+connection.end();
