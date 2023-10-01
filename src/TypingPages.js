@@ -1,22 +1,9 @@
-class TypingPages {
-    a(){
+function TypingPages() {}
 
-    }
-}
+function TypingBox() {}
 
+function SelectProgLang() {}
 
-class TypingBox{
-    typing(){
-        
-    }
-}
+function TypingSpeed() {}
 
-class SelectProgLang{
-    select(a){
-        
-    }
-}
-
-class TypingSpeed {}
-
-class PontSize {}
+function PontSize() {}
