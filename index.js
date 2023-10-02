@@ -9,11 +9,11 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', (req, res) => {
-  res.send('Root');
+  res.send('root');
 });
 
 app.get('/users', (req, res) => {
-  connection.query('SELECT * from cpptext', (error, rows) => {
+  connection.query('SELECT * from cpptext ORDER BY RAND() LIMIT 1', (error, rows) => {
     if (error) throw error;
     console.log('User info is: ', rows);
     res.send(rows);
