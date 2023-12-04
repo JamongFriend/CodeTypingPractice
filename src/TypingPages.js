@@ -13,7 +13,6 @@ function TypingBox() {
     textArr = [cutText];
     console.log(textArr);
 }
-console.log(TypingBox);
 
 function wordMatch() {
   }
